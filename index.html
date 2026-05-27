@@ -182,7 +182,22 @@
       font-weight:bold;
       animation:blink 1s infinite;
     }
+.photo {
+  width: 250px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 15px;
+  background: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* prevents cropping */
+}
     @keyframes blink{
       50%{
         opacity:0.3;
@@ -206,17 +221,17 @@
 
       <div class="photo">
         <img src="img1.jpg" alt="Friend Photo 1">
-        <div class="tag">Spotted thinking WiFi grows on trees 🌳</div>
+        <div class="tag">ese fool layega🌳</div>
       </div>
 
       <div class="photo">
         <img src="img2.jpg" alt="Friend Photo 2">
-        <div class="tag">Professional sleeper during conversations 😴</div>
+        <div class="tag"> hero h bhai 😴</div>
       </div>
 
       <div class="photo">
         <img src="img3.jpg" alt="Friend Photo 3">
-        <div class="tag">Still loading... brain update pending 🧠</div>
+        <div class="tag">Engineeeeer 🧠</div>
       </div>
 
     </div>
@@ -261,7 +276,7 @@
 
       setTimeout(() => {
         fill.style.width = "97%";
-        text.innerHTML = "Result: EXTREME GOOFBALL LEVEL DETECTED 🤡";
+        text.innerHTML = "Bhai ki bndi bnni chahiye 🤡";
       }, 800);
     };
 
